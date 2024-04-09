@@ -32,7 +32,86 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.calculator {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  height: 20%;
+  background-color: #282c34;
+  columns: white;
+  border: 1px solid #282c34;
+  border-radius: 5px;
+}
+
+.input input {
+  width: 93%;
+  height: 50px;
+  margin: 10px;
+  font-size: 20px;
+  color: rgb(6, 26, 92);
+  font-weight: 600;
+}
+
+.btns {
+  width: 97.5%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  background-color: #282c34;
+  border: 2px solid white;
+  border-radius: 4px solid white;
+  padding-left: 10px;
+}
+
+.btns-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97.5%;
+}
+
+
+.btns-line .MuiButtonBase-root {
+  background-color: rgb(98, 96, 96);
+  color: white;
+  width: 80px;
+  height: 45px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.btns-line .reset {
+  background-color: rgb(83, 83, 181);
+}
+
+.btns-line .ans {
+  background-color: rgb(65, 115, 65);
+}
+
+.btns-line .MuiButtonBase-root:hover {
+  background-color: white;
+  color: black;
 }
